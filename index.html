@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Nitin 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="hearts"></div>
+
+    <!-- Music -->
+    <audio id="birthdayMusic" loop>
+        <source src="music/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Welcome Screen -->
+    <section id="welcome" class="screen">
+        <div class="welcome-card">
+
+            <div class="emoji">🎀</div>
+
+            <h1>Hey Nitin... 👀</h1>
+
+            <p>
+                I have something very important to tell you...
+                <br>
+                but first, you have to press the button. 😌
+            </p>
+
+            <button onclick="startSurprise()">
+                Open Your Surprise 💗
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- Main Birthday Page -->
+    <main id="birthdayPage" class="hidden">
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="balloon balloon1">🎈</div>
+            <div class="balloon balloon2">🎈</div>
+            <div class="balloon balloon3">🎈</div>
+
+            <p class="small-title">Today is a VERY important day... 👀</p>
+
+            <h1>Happy Birthday</h1>
+
+            <h2>Nitin 💗</h2>
+
+            <p class="subtitle">
+                The birthday boy has officially leveled up! 🎮😂
+            </p>
+
+            <div class="cake">🎂</div>
+
+            <button class="music-button" onclick="toggleMusic()">
+                🎵 Play Music
+            </button>
+
+        </section>
+
+
+        <!-- Message -->
+        <section class="message-section">
+
+            <div class="card">
+
+                <div class="card-icon">💌</div>
+
+                <h2>A little message for you...</h2>
+
+                <p>
+                    Happy Birthday to the person who somehow manages to
+                    annoy me, make me laugh, make me smile and make my
+                    days better all at the same time. 😂❤️
+                </p>
+
+                <p>
+                    I hope your birthday is as amazing as you are...
+                    although let's be honest, that's a pretty high
+                    standard. 😌
+                </p>
+
+                <p>
+                    Thank you for being you, Nitin.
+                    I'm really lucky to have you. 🥹💗
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Photos -->
+        <section class="memories">
+
+            <p class="small-title">Some of my favorite memories 📸</p>
+
+            <h2>Us 💕</h2>
+
+            <div class="photo-grid">
+
+                <div class="photo-card">
+                    <img src="photos/IMG_1234.jpg" alt="Our memory">
+                    <p>My favorite person 🥹</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photos/IMG_2234.jpg" alt="Our memory">
+                    <p>Look at this handsome idiot 😂❤️</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photos/IMG_1334.jpg" alt="Our memory">
+                    <p>One of my favorite memories 💗</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Reasons -->
+        <section class="reasons">
+
+            <h2>Reasons why I love you 🥹</h2>
+
+            <div class="reason-container">
+
+                <div class="reason">Your smile 😊</div>
+
+                <div class="reason">Your hugs 🫂</div>
+
+                <div class="reason">You make me laugh 😂</div>
+
+                <div class="reason">You tolerate me 😌</div>
+
+                <div class="reason">You are always there ❤️</div>
+
+                <div class="reason">Because you're YOU 💗</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Gift -->
+        <section class="gift-section">
+
+            <h2>I have one more thing for you... 👀</h2>
+
+            <p>Click the gift. 🎁</p>
+
+            <button class="gift" onclick="openGift()">
+                🎁
+            </button>
+
+            <div id="giftMessage" class="gift-message hidden">
+
+                <h2>Surprise! 🥹💗</h2>
+
+                <p>
+                    You are stuck with me. Forever. 😂❤️
+                </p>
+
+                <p>
+                    No returns. No refunds. No exchanges. 😌
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Final -->
+        <section class="final-section">
+
+            <div class="final-card">
+
+                <div class="big-heart">❤️</div>
+
+                <h1>Happy Birthday, Nitin! 🎂</h1>
+
+                <p>
+                    I hope this year brings you lots of happiness,
+                    success, laughter and everything you've wished for.
+                </p>
+
+                <p>
+                    And I hope I get to be there for all the
+                    beautiful moments ahead. 🥹💕
+                </p>
+
+                <h2>Love you ❤️</h2>
+
+                <div class="final-emoji">
+                    🎂 🎈 💗 ✨ 🥳
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Nitin 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Happy Birthday Nitin! 🎂💗</h1>
+
+    <p>I made something special for you. 🥹</p>
+
+    <h2>Our Memories 📸💕</h2>
+
+    <div class="photos">
+
+        <img src="photos/IMG_1234.jpg" alt="Our memory">
+
+        <img src="photos/IMG_2234.jpg" alt="Our memory">
+
+        <img src="photos/IMG_1334.jpg" alt="Our memory">
+
+    </div>
+
+</body>
+
+</html>

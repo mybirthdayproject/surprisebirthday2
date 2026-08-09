@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff5f8;
+    color: #4a2633;
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* --------------------
+   Welcome Screen
+-------------------- */
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+    background:
+        radial-gradient(circle at top left, #ffd6e7, transparent 35%),
+        radial-gradient(circle at bottom right, #ffd1dc, transparent 35%),
+        #fff5f8;
+}
+
+.welcome-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 55px 35px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 35px;
+
+    box-shadow: 0 20px 60px rgba(200, 80, 120, 0.15);
+
+    animation: appear 1s ease;
+}
+
+.emoji {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.welcome-card h1 {
+    font-family: "Pacifico", cursive;
+    font-size: clamp(40px, 8vw, 65px);
+    color: #e75480;
+    margin-bottom: 20px;
+}
+
+.welcome-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #75505e;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.welcome-card button {
+    background: linear-gradient(135deg, #ff6f9c, #e75480);
+    color: white;
+
+    padding: 16px 28px;
+    border-radius: 50px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    box-shadow: 0 10px 25px rgba(231, 84, 128, 0.3);
+
+    transition: 0.3s;
+}
+
+.welcome-card button:hover {
+    transform: translateY(-4px) scale(1.03);
+}
+
+
+/* --------------------
+   Hero
+-------------------- */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at top, #ffd5e5, transparent 45%),
+        #fff6f9;
+
+    padding: 40px 20px;
+}
+
+.small-title {
+    color: #c45a7a;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: "Pacifico", cursive;
+    color: #e75480;
+    font-size: clamp(50px, 10vw, 90px);
+}
+
+.hero h2 {
+    font-size: clamp(35px, 7vw, 60px);
+    color: #593340;
+    margin-top: -5px;
+}
+
+.subtitle {
+    margin-top: 15px;
+    color: #805464;
+}
+
+.cake {
+    font-size: 100px;
+    margin: 35px 0 20px;
+    animation: bounce 2s infinite;
+}
+
+.music-button {
+    background: #fff;
+    color: #d94c77;
+
+    padding: 12px 22px;
+    border-radius: 30px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Balloons */
+
+.balloon {
+    position: absolute;
+    font-size: 70px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.balloon1 {
+    left: 7%;
+    top: 15%;
+}
+
+.balloon2 {
+    right: 8%;
+    top: 25%;
+    animation-delay: 1s;
+}
+
+.balloon3 {
+    left: 12%;
+    bottom: 12%;
+    animation-delay: 2s;
+}
+
+
+/* --------------------
+   Message
+-------------------- */
+
+.message-section {
+    padding: 100px 20px;
+
+    background: #fff;
+}
+
+.card {
+    max-width: 750px;
+    margin: auto;
+
+    padding: 50px 35px;
+
+    text-align: center;
+
+    background: #fff7fa;
+
+    border-radius: 35px;
+
+    box-shadow: 0 15px 50px rgba(180, 80, 110, 0.1);
+}
+
+.card-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-family: "Pacifico", cursive;
+    color: #df557e;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.card p {
+    color: #72505d;
+    line-height: 1.9;
+    margin: 18px 0;
+}
+
+
+/* --------------------
+   Memories
+-------------------- */
+
+.memories {
+    padding: 100px 20px;
+    text-align: center;
+
+    background: #fff0f5;
+}
+
+.memories h2 {
+    font-family: "Pacifico", cursive;
+    color: #df557e;
+    font-size: 45px;
+    margin-bottom: 45px;
+}
+
+.photo-grid {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.photo-card {
+    background: white;
+    padding: 12px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(160, 70, 100, 0.12);
+
+    transition: 0.3s;
+}
+
+.photo-card:hover {
+    transform: translateY(-8px) rotate(1deg);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.photo-card p {
+    padding: 15px 5px 8px;
+    color: #744a59;
+}
+
+
+/* --------------------
+   Reasons
+-------------------- */
+
+.reasons {
+    padding: 100px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.reasons h2 {
+    font-family: "Pacifico", cursive;
+    color: #df557e;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.reason-container {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.reason {
+    padding: 25px 15px;
+
+    background: #fff2f6;
+
+    border-radius: 20px;
+
+    color: #704452;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.reason:hover {
+    transform: scale(1.05);
+    background: #ffdce8;
+}
+
+
+/* --------------------
+   Gift
+-------------------- */
+
+.gift-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: #fff0f5;
+}
+
+.gift-section h2 {
+    color: #d94c77;
+    margin-bottom: 10px;
+}
+
+.gift-section p {
+    color: #775360;
+}
+
+.gift {
+    font-size: 100px;
+    background: transparent;
+    margin: 30px;
+
+    transition: 0.4s;
+}
+
+.gift:hover {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.gift-message {
+    max-width: 600px;
+    margin: auto;
+
+    padding: 35px;
+
+    background: white;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 40px rgba(190, 70, 110, 0.15);
+
+    animation: appear 0.7s ease;
+}
+
+.gift-message h2 {
+    font-family: "Pacifico", cursive;
+    font-size: 35px;
+}
+
+
+/* --------------------
+   Final Section
+-------------------- */
+
+.final-section {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(circle at center, #ffd3e3, transparent 60%),
+        #fff5f8;
+}
+
+.final-card {
+    max-width: 700px;
+    text-align: center;
+}
+
+.big-heart {
+    font-size: 80px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.final-card h1 {
+    font-family: "Pacifico", cursive;
+    color: #df557e;
+    font-size: clamp(40px, 8vw, 70px);
+    margin: 20px 0;
+}
+
+.final-card p {
+    color: #714c59;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.final-card h2 {
+    margin-top: 25px;
+    color: #d94c77;
+}
+
+.final-emoji {
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+
+/* --------------------
+   Animations
+-------------------- */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes float {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+/* --------------------
+   Mobile
+-------------------- */
+
+@media (max-width: 700px) {
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .photo-card img {
+        height: 350px;
+    }
+
+    .reason-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .balloon {
+        font-size: 50px;
+    }
+
+    .welcome-card {
+        padding: 40px 25px;
+    }
+}
